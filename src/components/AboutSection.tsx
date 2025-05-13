@@ -85,7 +85,7 @@ const AboutSection: React.FC = () => {
             
             <p className="text-xl md:text-2xl mt-4 mb-8 text-white/90 max-w-2xl mx-auto">
               Na KrillaTV você assiste tudo isso e muito mais por apenas 
-              <span className="text-krilla-purple font-bold"> R$ 39,90</span>/mês.
+              <span className="text-krilla-purple font-bold"> R$ 20,00</span>/mês.
             </p>
             
             <Button className="text-lg py-6 px-8 bg-krilla-purple hover:bg-krilla-purple/90 text-white font-semibold rounded-xl">

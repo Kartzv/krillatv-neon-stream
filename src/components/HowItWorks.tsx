@@ -1,6 +1,6 @@
 
 import React from "react";
-import { CreditCard, Mail, Play, CirclePlay } from "lucide-react";
+import { CreditCard, Mail, Play, CirclePlay, Download } from "lucide-react";
 
 const steps = [
   {
@@ -12,6 +12,11 @@ const steps = [
     icon: <Mail className="w-12 h-12 text-krilla-purple" />,
     title: "Receba seu login",
     description: "Suas credenciais serão enviadas por WhatsApp ou email"
+  },
+  {
+    icon: <Download className="w-12 h-12 text-krilla-purple" />,
+    title: "Baixe o aplicativo",
+    description: "Entre em contato conosco para saber qual aplicativo baixar em seu dispositivo"
   },
   {
     icon: <CirclePlay className="w-12 h-12 text-krilla-purple" />,
@@ -39,7 +44,7 @@ const HowItWorks: React.FC = () => {
         </div>
         
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {steps.map((step, index) => (
               <div key={index} className="relative">
                 <div className="bg-black/50 backdrop-blur-sm rounded-xl p-8 border border-krilla-purple/20 h-full flex flex-col items-center text-center group hover:border-krilla-purple/50 transition-all">
