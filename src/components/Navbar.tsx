@@ -54,9 +54,11 @@ const Navbar: React.FC = () => {
         </nav>
 
         <div className="hidden md:block">
-          <Button className="bg-krilla-purple hover:bg-krilla-purple/90 text-white">
-            Assinar Agora
-          </Button>
+          <a href="#plans">
+            <Button className="bg-krilla-purple hover:bg-krilla-purple/90 text-white">
+              Assinar Agora
+            </Button>
+          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -115,9 +117,11 @@ const Navbar: React.FC = () => {
               Contato
             </a>
             <div className="pt-4">
-              <Button className="w-full bg-krilla-purple hover:bg-krilla-purple/90 text-white">
-                Assinar Agora
-              </Button>
+              <a href="#plans">
+                <Button className="w-full bg-krilla-purple hover:bg-krilla-purple/90 text-white">
+                  Assinar Agora
+                </Button>
+              </a>
             </div>
           </div>
         </div>

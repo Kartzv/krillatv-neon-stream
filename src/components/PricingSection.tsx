@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { QrCode, Check } from "lucide-react";
+import { QrCode, Check, SendHorizontal } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const plans = [
@@ -12,7 +12,7 @@ const plans = [
     period: "por mês",
     connections: 2,
     features: [
-      "Acesso a +200 canais",
+      "Acesso a +1200 canais",
       "13400 filmes e 6700 séries em HD/4K",
       "2 telas simultâneas",
       "Suporte 24/7",
@@ -27,7 +27,7 @@ const plans = [
     connections: 3,
     popular: true,
     features: [
-      "Acesso a +200 canais",
+      "Acesso a +1200 canais",
       "13400 filmes e 6700 séries em HD/4K",
       "3 telas simultâneas",
       "Suporte 24/7",
@@ -41,7 +41,7 @@ const plans = [
     period: "por ano",
     connections: 3,
     features: [
-      "Acesso a +200 canais",
+      "Acesso a +1200 canais",
       "13400 filmes e 6700 séries em HD/4K",
       "3 telas simultâneas",
       "Suporte 24/7",
@@ -152,14 +152,26 @@ const PricingSection: React.FC = () => {
               {/* Placeholder for QR code - replace with actual QR code */}
               <div className="text-black text-center">
                 <QrCode className="w-32 h-32 mx-auto text-krilla-purple" />
-                <p className="mt-4">Edite este QR code para seu Pix</p>
+                <p className="mt-4">Escaneie este QR code para pagar</p>
               </div>
             </div>
             
             <p className="mt-6 text-center text-white/80">
-              Escaneie o QR code acima para realizar o pagamento via Pix.<br/>
-              Após o pagamento, envie o comprovante pelo WhatsApp.
+              Escaneie o QR code acima para realizar o pagamento via Pix.
             </p>
+            
+            <a 
+              href="https://wa.me/5521980313659?text=Olá!%20Gostaria%20de%20enviar%20o%20comprovante%20de%20pagamento%20da%20KrillaTV."
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="mt-4 w-full"
+            >
+              <Button 
+                className="w-full py-6 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-medium text-lg rounded-lg"
+              >
+                <SendHorizontal className="mr-2 h-5 w-5" /> Enviar Comprovante
+              </Button>
+            </a>
           </div>
         </DialogContent>
       </Dialog>

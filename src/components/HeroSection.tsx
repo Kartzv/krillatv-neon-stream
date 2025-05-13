@@ -29,18 +29,26 @@ const HeroSection: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="text-lg py-6 px-8 bg-krilla-purple hover:bg-krilla-purple/90 text-white font-semibold rounded-xl">
-              Assinar Agora
-            </Button>
-            <Button variant="outline" className="text-lg py-6 px-8 border-krilla-purple text-krilla-purple hover:bg-krilla-purple/10 font-semibold rounded-xl">
-              <Play className="mr-2 h-5 w-5" /> Testar Grátis
-            </Button>
+            <a href="#plans">
+              <Button className="text-lg py-6 px-8 bg-krilla-purple hover:bg-krilla-purple/90 text-white font-semibold rounded-xl">
+                Assinar Agora
+              </Button>
+            </a>
+            <a 
+              href="https://wa.me/5521980313659?text=Olá!%20Gostaria%20de%20solicitar%20um%20teste%20grátis%20da%20KrillaTV."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" className="text-lg py-6 px-8 border-krilla-purple text-krilla-purple hover:bg-krilla-purple/10 font-semibold rounded-xl">
+                <Play className="mr-2 h-5 w-5" /> Testar Grátis
+              </Button>
+            </a>
           </div>
           
           <div className="mt-12 flex justify-center">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-krilla-purple animate-pulse"></div>
-              <p className="text-white/80">Mais de 10.000 canais e conteúdos disponíveis</p>
+              <p className="text-white/80">Mais de 1200 canais e conteúdos disponíveis</p>
             </div>
           </div>
         </div>

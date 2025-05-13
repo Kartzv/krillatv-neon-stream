@@ -106,7 +106,7 @@ const ContactSection: React.FC = () => {
               
               <div className="space-y-6">
                 <a
-                  href="https://wa.me/5511999999999"
+                  href="https://wa.me/5521980313659?text=Olá!%20Gostaria%20de%20falar%20sobre%20a%20KrillaTV."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center p-4 bg-black/30 rounded-lg border border-krilla-purple/20 hover:border-krilla-purple/50 transition-all"

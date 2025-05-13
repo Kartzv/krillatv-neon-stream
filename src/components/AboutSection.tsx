@@ -88,9 +88,11 @@ const AboutSection: React.FC = () => {
               <span className="text-krilla-purple font-bold"> R$ 20,00</span>/mês.
             </p>
             
-            <Button className="text-lg py-6 px-8 bg-krilla-purple hover:bg-krilla-purple/90 text-white font-semibold rounded-xl">
-              Quero economizar agora
-            </Button>
+            <a href="#plans">
+              <Button className="text-lg py-6 px-8 bg-krilla-purple hover:bg-krilla-purple/90 text-white font-semibold rounded-xl">
+                Quero economizar agora
+              </Button>
+            </a>
           </div>
         </div>
       </div>
