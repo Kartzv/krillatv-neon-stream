@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Tv, Monitor, Headphones } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const AboutSection: React.FC = () => {
   return (

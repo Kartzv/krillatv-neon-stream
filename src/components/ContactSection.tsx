@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Whatsapp, Mail, MessageSquare } from "lucide-react";
+import { MessageSquare, Mail } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactSection: React.FC = () => {
@@ -112,7 +112,7 @@ const ContactSection: React.FC = () => {
                   className="flex items-center p-4 bg-black/30 rounded-lg border border-krilla-purple/20 hover:border-krilla-purple/50 transition-all"
                 >
                   <div className="w-12 h-12 rounded-full bg-green-600/20 flex items-center justify-center">
-                    <Whatsapp className="w-6 h-6 text-green-500" />
+                    <MessageSquare className="w-6 h-6 text-green-500" />
                   </div>
                   <div className="ml-4">
                     <h4 className="font-medium text-white">WhatsApp</h4>
