@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				krilla: {
+					purple: '#8B5CF6',
+					'purple-light': '#9B87F5',
+					blue: '#0EA5E9',
+					dark: '#121212',
+					'dark-blue': '#1E293B',
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,35 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'marquee': {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-100%)' }
+				},
+				'glow': {
+					'0%, 100%': { 
+						opacity: 1,
+						filter: 'brightness(1)' 
+					},
+					'50%': { 
+						opacity: 0.8,
+						filter: 'brightness(1.2)' 
+					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'marquee': 'marquee 25s linear infinite',
+				'glow': 'glow 2s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'hero-pattern': 'linear-gradient(to bottom, rgba(18, 18, 18, 0.8), rgba(30, 41, 59, 0.9)), url("/hero-bg.jpg")',
 			}
 		}
 	},
